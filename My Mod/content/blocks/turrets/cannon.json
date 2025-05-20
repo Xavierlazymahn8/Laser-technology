@@ -1,0 +1,79 @@
+{
+  "type": "ItemTurret",
+  "name": "Laser Artillery",
+  "description": "Discharge enemy with hailing a laser into the skies",
+  "researchCostMultiplier": 1.5,
+  "size": 3,
+  "health": 960,
+  "maxAmmo": 20,
+  "ammoPerShot": 5,
+  "reload": 75,
+  "range": 400,
+  "targetAir": false,
+  "targetGround": true,
+  "rotateSpeed": 1.5,
+  "inaccuracy": 0,
+  "hasPower": true,
+  "consumes": {
+    "power": 10
+  },
+  "recoilAmount": 10,
+  "restitution": 0.8,
+  "shootSound": "shootSmite",
+  "ammoTypes": {
+    "phase-fabric": {
+      "type": "ArtilleryBulletType",
+      "damage": 125,
+      "splashDamageRadius": 100,
+      "splashDamage": 50,
+      "speed": 4,
+      "lifetime": 100,
+      "height": 10,
+      "width": 10,
+      "homingPower": 5,
+      "homingRange": 85,
+      "trailColor": "FF0000",
+      "frontColor": "FFFFFF",
+      "backColor": "FF0000",
+      "trailColor": "FF0000",
+      "frontColor": "FFFFFF",
+      "backColor": "FF0000",
+      "trailColor": "FF0000",
+      "hitEffect": "plasticExplosion",
+      "shootEffect": "shootSmokeDisperse",
+      "smokeEffect": "massiveExplosion"
+      "trailWidth": 1.5,
+      "trailLength": 5,
+      "laserAbsorb": true,
+      "hittable": false,
+      "reflectable": false,
+      "absorbable": false
+      "status": "unmoving",
+      "statusDuration": 50,
+    }
+  },
+  "requirements": [
+    {
+      "item": "surge-alloy",
+      "amount": 100
+    },
+    {
+      "item": "phase-fabric",
+      "amount": 100
+    },
+    {
+      "item": "copper",
+      "amount": 500
+    },
+    {
+      "item": "titanium",
+      "amount": 125
+    },
+    {
+      "item": "powergem",
+      "amount": 50
+    }
+  ],
+  "category": "turret",
+  "research": "executor"
+}

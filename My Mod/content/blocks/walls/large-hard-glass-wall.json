@@ -1,0 +1,13 @@
+{
+  "name": "Large Hard Glass Wall",
+  "description": "do you need more stronger wall?",
+  "type": "Wall",
+  "buildCostMultiplier": 0.6,
+  "health": 2450,
+  "size": 2,
+  "requirements": [
+    "hardglass/24"
+  ],
+  "category": "defense",
+  "research": "hard-glass-wall"
+}

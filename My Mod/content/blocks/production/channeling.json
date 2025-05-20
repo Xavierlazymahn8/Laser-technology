@@ -1,0 +1,58 @@
+{
+  "type": "GenericCrafter",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFlame",
+        "flameColor": "D1FFFE"
+      }
+    ]
+  },
+  "size": 2,
+  "researchCostMultiplier": 0.1,
+  "name": "Cryo Channeling",
+  "description": "fill the empty core in titanum and layered copper with silicon into cryo orb",
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "itemCapacity": 10,
+  "craftEffect": {
+    "type": "ParticleEffect",
+    "particles": 6,
+    "length": 20,
+    "baseLength": -20,
+    "offset": 3,
+    "cone": 360,
+    "lifetime": 28,
+    "sizeFrom": 0,
+    "sizeTo": 2,
+    "colorTo": "87FFFD",
+    "colorFrom": "87FFFD"
+  },
+  "craftTime": 100,
+  "updateEffect": "freezing",
+  "consumes": {
+    "power": 1,
+    "items": [
+      "titanium/1"
+      "copper/5"
+      "silicon/5"
+    ],
+    "liquids": [
+      "cryofluid/0.65"
+    ]
+  },
+  "requirements": [
+    "titanium/500",
+    "thorium/500",
+    "copper/150",
+    "silicon/300"
+  ],
+  "category": "crafting",
+  "research": "phase-weaver",
+  "outputItem": "cryo-orb/1"
+}

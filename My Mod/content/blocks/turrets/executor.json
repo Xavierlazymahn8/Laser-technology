@@ -1,0 +1,118 @@
+{
+  "type": "ItemTurret",
+  "name": "Laser Executor",
+  "description": "Heavy Gunshot Turret, Prioritize High speed Aerial enemy",
+  "researchCostMultiplier": 2.0,
+  "size": 3,
+  "health": 1300,
+  "maxAmmo": 25,
+  "ammoPerShot": 10,
+  "reload": 45,
+  "range": 750,
+  "shootY": 9,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 4.5,
+  "inaccuracy": 5,
+  "hasPower": true,
+  "consumes": {
+    "power": 15
+  },
+  "shoot": {
+    "type": "ShootAlternate",
+    "barrels": 2,
+    "spread": 20,
+    "shots": 1
+  },
+  "recoilAmount": 60,
+  "restitution": 0.8,
+  "shootSound": "laserGunshotZizzling",
+  "ammoTypes": {
+    "surge-alloy": {
+      "type": "BasicBulletType",
+      "damage": 50,
+      "splashDamageRadius": 20,
+      "splashDamage": 25,
+      "speed": 15,
+      "lifetime": 50,
+      "height": 12,
+      "width": 7,
+      "homingPower": 5,
+      "homingRange": 500,
+      "trailColor": "FCFF63",
+      "frontColor": "FFFFFF",
+      "backColor": "FCFF63",
+      "trailColor": "FCFF63",
+      "hitEffect": "massiveExplosion",
+      "shootEffect": "massiveExplosion",
+      "smokeEffect": "shootSmokeSquareSparse",
+      "trailEffect": "colorTrail",
+      "status": "slow",
+      "statusDuration": 100,
+      "trailWidth": 1.5,
+      "trailLength": 20,
+      "knockback": 10,
+      "laserAbsorb": true,
+      "hittable": false,
+      "reflectable": true,
+      "absorbable": false
+    }
+    "powergem": {
+      "type": "BasicBulletType",
+      "damage": 100,
+      "splashDamageRadius": 20,
+      "splashDamage": 50,
+      "speed": 15,
+      "lifetime": 50,
+      "height": 12,
+      "width": 7,
+      "homingPower": 10,
+      "homingRange": 500,
+      "trailColor": "FF0000",
+      "frontColor": "FFFFFF",
+      "backColor": "FF0000",
+      "trailColor": "FF0000",
+      "hitEffect": "massiveExplosion",
+      "shootEffect": "massiveExplosion",
+      "smokeEffect": "shootSmokeSquareSparse",
+      "trailEffect": "colorTrail",
+      "status": "blasted",
+      "statusDuration": 100,
+      "trailWidth": 1.5,
+      "trailLength": 20,
+      "knockback": 10,
+      "laserAbsorb": true,
+      "hittable": false,
+      "reflectable": true,
+      "absorbable": false
+    }
+  },
+  "requirements": [
+    {
+      "item": "surge-alloy",
+      "amount": 1000
+    },
+    {
+      "item": "plastanium",
+      "amount": 200
+    },
+    {
+      "item": "lead",
+      "amount": 250
+    },
+    {
+      "item": "copper",
+      "amount": 250
+    },
+    {
+      "item": "titanium",
+      "amount": 100
+    },
+    {
+      "item": "powergem",
+      "amount": 50
+    }
+  ],
+  "category": "turret",
+  "research": "raillaser"
+}

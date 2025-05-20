@@ -1,0 +1,66 @@
+{
+  "type": "ItemTurret",
+  "name": "Laser Blaster",
+  "description": "fire a weak laser bullet at enemy",
+  "researchCostMultiplier": 0.5,
+  "size": 1,
+  "health": 150,
+  "maxAmmo": 25,
+  "ammoPerShot": 1,
+  "reload": 10,
+  "range": 150,
+  "targetAir": false,
+  "targetGround": true,
+  "rotateSpeed": 5,
+  "inaccuracy": 0,
+  "hasPower": true,
+  "consumes": {
+    "power": 5
+  },
+  "recoilAmount": 2,
+  "restitution": 0.8,
+  "shootSound": "laserBlast",
+  "ammoTypes": {
+    "hardglass": {
+      "type": "BasicBulletType",
+      "damage": 10,
+      "speed": 3.5,
+      "lifetime": 50,
+      "height": 12,
+      "width": 7,
+      "pierce": true,
+      "homingPower": 100,
+      "homingRange": 100,
+      "trailColor": "FF0000",
+      "frontColor": "FFFFFF",
+      "backColor": "FF0000",
+      "hitEffect": "plasticExplosion",
+      "shootEffect": "none",
+      "smokeEffect": "shootSmokeDisperse"
+      "laserAbsorb": true,
+      "hittable": true,
+      "reflectable": true,
+      "absorbable": true
+    }
+  },
+  "requirements": [
+    {
+      "item": "plastanium",
+      "amount": 100
+    },
+    {
+      "item": "copper",
+      "amount": 200
+    },
+    {
+      "item": "lead",
+      "amount": 55
+    },
+    {
+      "item": "powergem",
+      "amount": 10
+    }
+  ],
+  "category": "turret",
+  "research": "fuse"
+}

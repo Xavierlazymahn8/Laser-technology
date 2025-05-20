@@ -1,0 +1,74 @@
+{
+  "type": "ItemTurret",
+  "name": "Railgun Laser",
+  "description": "unleash a devastating bullet at enemy",
+  "researchCostMultiplier": 2.0,
+  "size": 2,
+  "health": 1300,
+  "maxAmmo": 60,
+  "ammoPerShot": 30,
+  "reload": 200,
+  "range": 450,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 30,
+  "inaccuracy": 0,
+  "hasPower": true,
+  "consumes": {
+    "power": 15
+  },
+  "recoilAmount": 30,
+  "restitution": 0.8,
+  "shootSound": "laserGunshotZizzling",
+  "ammoTypes": {
+    "surge-alloy": {
+      "type": "BasicBulletType",
+      "damage": 950,
+      "splashDamageRadius": 30,
+      "splashDamage": 1,
+      "speed": 10,
+      "lifetime": 45,
+      "height": 12,
+      "width": 7,
+      "homingPower": 10,
+      "homingRange": 100,
+      "trailColor": "FF0000",
+      "frontColor": "FFFFFF",
+      "backColor": "FF0000",
+      "trailColor": "FF0000",
+      "hitEffect": "bigShockwave",
+      "shootEffect": "mineImpactWave",
+      "smokeEffect": "fireballsmoke",
+      "trailEffect": "colorSpark",
+      "trailWidth": 1.5,
+      "trailLength": 30,
+      "knockback": 30,
+      "status": "unmoving",
+      "statusDuration": 200,
+      "laserAbsorb": true,
+      "hittable": false,
+      "reflectable": true,
+      "absorbable": false
+    }
+  },
+  "requirements": [
+    {
+      "item": "surge-alloy",
+      "amount": 500
+    },
+    {
+      "item": "copper",
+      "amount": 500
+    },
+    {
+      "item": "titanium",
+      "amount": 100
+    },
+    {
+      "item": "powergem",
+      "amount": 10
+    }
+  ],
+  "category": "turret",
+  "research": "lasergun"
+}

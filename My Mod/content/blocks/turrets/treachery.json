@@ -1,0 +1,108 @@
+{
+  "type": "ItemTurret",
+  "name": "Treachery",
+  "description": "the last railgun, devastating destruction",
+  "researchCostMultiplier": 5.0,
+  "size": 5,
+  "health": 5000,
+  "maxAmmo": 100,
+  "ammoPerShot": 50,
+  "reload": 150,
+  "range": 1425,
+  "shootY": -6,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 2,
+  "inaccuracy": 0,
+  "hasPower": true,
+  "consumes": {
+    "power": 30
+  },
+  "recoilAmount": 100,
+  "restitution": 0.8,
+  "shootSound": "deathShot",
+  "ammoTypes": {
+    "powergem": {
+      "type": "BasicBulletType",
+      "damage": 2500,
+      "splashDamageRadius": 100,
+      "splashDamage": 100,
+      "pierce": true,
+      "pierceCap": 10,
+      "pierceDamageFactor": 2.5,
+      "speed": 15,
+      "lifetime": 95,
+      "height": 35,
+      "width": 7,
+      "trailColor": "FF0000",
+      "frontColor": "FFFFFF",
+      "backColor": "FF0000",
+      "trailColor": "FF0000",
+      "hitEffect": "massiveExplosion",
+      "shootEffect": "shootSmokeSquareBig",
+      "smokeEffect": "shootSmokeDisperse",
+      "trailEffect": "colorTrail",
+      "trailWidth": 1.5,
+      "trailLength": 20,
+      "laserAbsorb": true,
+      "hittable": false,
+      "reflectable": true,
+      "absorbable": false
+    }
+  },
+  "requirements": [
+    {
+      "item": "surge-alloy",
+      "amount": 2000
+    },
+    {
+      "item": "plastanium",
+      "amount": 1000
+    },
+    {
+      "item": "copper",
+      "amount": 3000
+    },
+    {
+      "item": "titanium",
+      "amount": 1000
+    },
+    {
+      "item": "powergem",
+      "amount": 500
+    },
+    {
+      "item": "phase-fabric",
+      "amount": 500
+    }
+  ],
+  "category": "turret",
+  "research": "gatling-laser",
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-barrel",
+        "mirror": false,
+        "under": true,
+        "progress": "recoil",
+        "moveY": -5
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-body",
+        "mirror": false,
+        "progress": "recoil",
+        "moveY": -2
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-top",
+        "mirror": false,
+        "under": true,
+        "progress": "recoil"
+      }
+    ]
+  }
+}

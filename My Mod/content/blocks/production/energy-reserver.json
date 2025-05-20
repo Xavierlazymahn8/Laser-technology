@@ -1,0 +1,54 @@
+{
+  "type": "GenericCrafter",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFlame",
+        "flameColor": "FF0000"
+      }
+    ]
+  },
+  "size": 2,
+  "name": "Energy Reserver",
+  "description": "store a fabric inside the hardened crystal to reduce the radiation and create powered glass",
+  "researchCostMultiplier": 0.1,
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 10,
+  "craftEffect": {
+    "type": "ParticleEffect",
+    "particles": 6,
+    "length": 20,
+    "baseLength": -20,
+    "offset": 3,
+    "cone": 360,
+    "lifetime": 28,
+    "sizeFrom": 0,
+    "sizeTo": 2,
+    "colorTo": "FF0000",
+    "colorFrom": "FF0000"
+  },
+  "craftTime": 50,
+  "updateEffect": "mineImpactWave",
+  "consumes": {
+    "power": 5,
+    "items": {
+      "items": [
+        "hardglass/5"
+        "phase-fabric/1"
+      ]
+    }
+  },
+  "requirements": [
+    "hardglass/100",
+    "plastanium/50",
+    "phase-fabric/50"
+  ],
+  "category": "crafting",
+  "research": "phase-weaver",
+  "outputItem": "powergem/1"
+}

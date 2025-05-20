@@ -1,0 +1,149 @@
+{
+  "type": "ItemTurret",
+  "name": "Gatling Laser",
+  "description": "Rapidly unleash barrage of laser toward enemy",
+  "researchCostMultiplier": 2.1,
+  "size": 3,
+  "health": 2000,
+  "maxAmmo": 30,
+  "reload": 7.5,
+  "range": 435,
+  "shootY": 12,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 4.5,
+  "inaccuracy": 2.5,
+  "hasPower": true,
+  "consumes": {
+    "power": 20
+  },
+  "shoot": {
+    "type": "ShootAlternate",
+    "barrels": 3,
+    "spread": 4,
+    "shots": 1
+  },
+  "recoilAmount": 10,
+  "restitution": 0.8,
+  "shootSound": "malignShoot",
+  "ammoTypes": {
+    "surge-alloy": {
+      "type": "BasicBulletType",
+      "damage": 100,
+      "speed": 8.7,
+      "lifetime": 50,
+      "ammoPerShot": 5,
+      "height": 12,
+      "width": 7,
+      "homingPower": 10,
+      "homingRange": 10,
+      "trailColor": "FCFF63",
+      "frontColor": "FFFFFF",
+      "backColor": "FCFF63",
+      "trailColor": "FCFF63",
+      "hitEffect": "railHit",
+      "shootEffect": "none",
+      "smokeEffect": "shootSmokeDisperse",
+      "status": "shocked",
+      "statusDuration": 100,
+      "trailEffect": "colorSpark",
+      "trailWidth": 1.5,
+      "trailLength": 5,
+      "laserAbsorb": true,
+      "hittable": false,
+      "reflectable": true,
+      "absorbable": false
+    }
+    "powergem": {
+      "type": "BasicBulletType",
+      "damage": 125,
+      "rangeChange": 54.5,
+      "speed": 8.9,
+      "lifetime": 55,
+      "ammoPerShot": 5,
+      "height": 12,
+      "width": 7,
+      "homingPower": 20,
+      "homingRange": 20,
+      "trailColor": "FF0000",
+      "frontColor": "FFFFFF",
+      "backColor": "FF0000",
+      "trailColor": "FF0000",
+      "hitEffect": "railHit",
+      "shootEffect": "none",
+      "smokeEffect": "shootSmokeDisperse",
+      "status": "shocked",
+      "statusDuration": 500,
+      "trailEffect": "colorSpark",
+      "trailWidth": 1.5,
+      "trailLength": 7,
+      "laserAbsorb": true,
+      "hittable": false,
+      "reflectable": false,
+      "absorbable": false
+    }
+    "cryo-orb": {
+      "type": "BasicBulletType",
+      "damage": 95,
+      "splashDamageRadius": 25,
+      "splashDamage": 10,
+      "rangeChange": 27,
+      "speed": 8.4,
+      "lifetime": 55,
+      "ammoPerShot": 5,
+      "height": 12,
+      "width": 7,
+      "pierce": true,
+      "homingPower": 5,
+      "homingRange": 5,
+      "trailColor": "7DDBDB",
+      "frontColor": "FFFFFF",
+      "backColor": "7DDBDB",
+      "trailColor": "7DDBDB",
+      "hitEffect": "railHit",
+      "shootEffect": "none",
+      "smokeEffect": "shootSmokeDisperse",
+      "status": "freezing",
+      "statusDuration": 500,
+      "trailEffect": "colorSpark",
+      "trailWidth": 1.5,
+      "trailLength": 4,
+      "laserAbsorb": true,
+      "hittable": true,
+      "reflectable": true,
+      "absorbable": false
+    }
+  },
+  "requirements": [
+    {
+      "item": "plastanium",
+      "amount": 300
+    },
+    {
+      "item": "surge-alloy",
+      "amount": 1000
+    },
+    {
+      "item": "thorium",
+      "amount": 500
+    },
+    {
+      "item": "copper",
+      "amount": 500
+    },
+    {
+      "item": "metaglass",
+      "amount": 1000
+    },
+    {
+      "item": "hardglass",
+      "amount": 30
+    },
+    {
+      "item": "powergem",
+      "amount": 100
+    },
+  ],
+  "category": "turret",
+  "research": "raillaser"
+}

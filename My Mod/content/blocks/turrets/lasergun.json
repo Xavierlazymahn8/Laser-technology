@@ -1,0 +1,90 @@
+{
+  "type": "ItemTurret",
+  "name": "Laser Gunner",
+  "description": "fire a laser bullet at enemy, akin to laserblast",
+  "researchCostMultiplier": 1.5,
+  "size": 2,
+  "health": 950,
+  "maxAmmo": 20,
+  "ammoPerShot": 1,
+  "reload": 8,
+  "range": 320,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 7,
+  "inaccuracy": 1,
+  "hasPower": true,
+  "consumes": {
+    "power": 10
+  },
+  "recoilAmount": 3,
+  "restitution": 0.8,
+  "shootSound": "laserGun",
+  "ammoTypes": {
+    "metaglass": {
+      "type": "BasicBulletType",
+      "damage": 10,
+      "speed": 5.5,
+      "lifetime": 70,
+      "height": 12,
+      "width": 7,
+      "homingPower": 50,
+      "homingRange": 100,
+      "trailColor": "FF0000",
+      "frontColor": "FFFFFF",
+      "backColor": "FF0000",
+      "hitEffect": "plasticExplosion",
+      "shootEffect": "none",
+      "smokeEffect": "shootSmokeDisperse"
+      "laserAbsorb": true,
+      "hittable": true,
+      "reflectable": true,
+      "absorbable": true
+    }
+    "hardglass": {
+      "type": "BasicBulletType",
+      "damage": 50,
+      "speed": 5.5,
+      "lifetime": 75,
+      "height": 12,
+      "width": 7,
+      "pierce": true,
+      "homingPower": 100,
+      "homingRange": 100,
+      "trailColor": "FF0000",
+      "frontColor": "FFFFFF",
+      "backColor": "FF0000",
+      "hitEffect": "plasticExplosion",
+      "shootEffect": "none",
+      "smokeEffect": "shootSmokeDisperse"
+      "laserAbsorb": true,
+      "hittable": false,
+      "reflectable": true,
+      "absorbable": false
+    }
+  },
+  "requirements": [
+    {
+      "item": "plastanium",
+      "amount": 200
+    },
+    {
+      "item": "copper",
+      "amount": 500
+    },
+    {
+      "item": "phase-fabric",
+      "amount": 50
+    },
+    {
+      "item": "lead",
+      "amount": 250
+    },
+    {
+      "item": "powergem",
+      "amount": 10
+    }
+  ],
+  "category": "turret",
+  "research": "laserblast"
+}

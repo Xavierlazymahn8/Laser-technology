@@ -1,0 +1,54 @@
+{
+  "type": "GenericCrafter",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFlame",
+        "flameColor": "F2F2F2"
+      }
+    ]
+  },
+  "size": 2,
+  "researchCostMultiplier": 0.1,
+  "name": "Glass thickener",
+  "description": "hardened 5 metaglass into a stronger version of metaglass",
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 10,
+  "craftEffect": {
+    "type": "ParticleEffect",
+    "particles": 6,
+    "length": 20,
+    "baseLength": -20,
+    "offset": 3,
+    "cone": 360,
+    "lifetime": 28,
+    "sizeFrom": 0,
+    "sizeTo": 2,
+    "colorTo": "F2F2F2",
+    "colorFrom": "F2F2F2"
+  },
+  "craftTime": 65,
+  "updateEffect": "burning",
+  "consumes": {
+    "power": 1,
+    "items": {
+      "items": [
+        "metaglass/5"
+      ]
+    }
+  },
+  "requirements": [
+    "titanium/100",
+    "metaglass/200",
+    "lead/100",
+    "silicon/300"
+  ],
+  "category": "crafting",
+  "research": "kiln",
+  "outputItem": "hardglass/1"
+}

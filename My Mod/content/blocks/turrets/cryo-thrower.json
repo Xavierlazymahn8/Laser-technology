@@ -1,0 +1,91 @@
+{
+  "type": "ItemTurret",
+  "name": "Cryo thrower",
+  "description": "launch a singular cold bombard toward enemy",
+  "researchCostMultiplier": 2.5,
+  "size": 2,
+  "health": 1000,
+  "maxAmmo": 20,
+  "reload": 100,
+  "range": 450,
+  "minRange": 90.5,
+  "targetAir": false,
+  "targetGround": true,
+  "rotateSpeed": 15,
+  "inaccuracy": 1,
+  "hasPower": true,
+  "consumes": {
+    "power": 10
+  },
+  "recoilAmount": 3,
+  "restitution": 0.8,
+  "shootSound": "shootSmite",
+  "ammoTypes": {
+    "titanium": {
+      "type": "ArtilleryBulletType",
+      "damage": 50,
+      "splashDamageRadius": 20,
+      "splashDamage": 100,
+      "speed": 4.5,
+      "lifetime": 100,
+      "ammoPerShot": 5,
+      "height": 12,
+      "width": 7,
+      "pierce": true,
+      "homingPower": 100,
+      "homingRange": 100,
+      "trailColor": "7DDBDB",
+      "frontColor": "FFFFFF",
+      "backColor": "7DDBDB",
+      "hitEffect": "mineImpactWave",
+      "shootEffect": "none",
+      "smokeEffect": "shootSmokeDisperse",
+      "status": "freezing",
+      "statusDuration": 200,
+    }
+    "cryo-orb": {
+      "type": "ArtilleryBulletType",
+      "rangeChange": 15.5,
+      "damage": 150,
+      "splashDamageRadius": 50,
+      "splashDamage": 50,
+      "speed": 4.9,
+      "lifetime": 95,
+      "ammoPerShot": 1,
+      "height": 12,
+      "width": 7,
+      "pierce": true,
+      "homingPower": 80,
+      "homingRange": 80,
+      "trailColor": "7DDBDB",
+      "frontColor": "FFFFFF",
+      "backColor": "7DDBDB",
+      "trailColor": "7DDBDB",
+      "hitEffect": "mineImpactWave",
+      "shootEffect": "none",
+      "smokeEffect": "shootSmokeDisperse",
+      "status": "freezing",
+      "statusDuration": 400,
+    }
+  },
+  "requirements": [
+    {
+      "item": "plastanium",
+      "amount": 200
+    },
+    {
+      "item": "titanium",
+      "amount": 500
+    },
+    {
+      "item": "thorium",
+      "amount": 100
+    },
+    {
+      "item": "lead",
+      "amount": 250
+    },
+  ],
+  "category": "turret",
+  "research": "laserblast"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Hard Glass Wall",
+  "description": "hard glass wall, use to protect any structure behind it",
+  "type": "Wall",
+  "buildCostMultiplier": 0.2,
+  "health": 1200,
+  "size": 1,
+  "requirements": [
+    "hardglass/6"
+  ],
+  "category": "defense",
+  "research": "titanium-wall-large"
+}
